@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>The Movie Database (TMDB)</title>
+</head>
+
+<body>
+    <section id="app">
+        
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand">
+                        <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg"
+                            width="154" height="20"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navElement"
+                        aria-control="navElement" aria-expanded="false" aria-label="Toggle">
+                        
+                        <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+                            <div class="container-fluid">
+                                <a href="#" class="navbar-brand">
+                                    <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg"
+                                        width="154" height="20"></a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navElement" aria-control="navElement" aria-expanded="false"
+                                    aria-label="Toggle">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div id="navElement" class="collapse navbar-collapse">
+                                    <ul class="navbar-nav">
+
+                                        <li class="nav-item dropdown">
+                                            <a href="#" class="nav-link dropdown" id="text" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">Films</a>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                                <li><a href="index2.html" class="dropdown-item">Populaires</a> </li>
+                                                <li><a href="index3.html" class="dropdown-item">Du moment</a></li>
+                                                <li><a href="index4.html" class="dropdown-item">A venir</a></li>
+                                                <li><a href="index5.html" class="dropdown-item">Les mieux notés</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a href="#" class="nav-link dropdown" id="text" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">Emissions télévisées</a>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                                <li><a href="index2.html" class="dropdown-item">Populaires</a> </li>
+                                                <li><a href="index3.html" class="dropdown-item">Diffusées
+                                                        aujourd'hui</a></li>
+                                                <li><a href="index4.html" class="dropdown-item">En cours de
+                                                        diffusion</a></li>
+                                                <li><a href="index5.html" class="dropdown-item">Les mieux notés</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a href="#" class="nav-link dropdown" id="text" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">Artistes</a>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                                <li><a href="actor.html" class="dropdown-item">Les plus consultés</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a href="#" class="nav-link dropdown" id="text" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">Plus</a>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                                <li><a href="index2.html" class="dropdown-item">Conversations</a> </li>
+                                                <li><a href="index3.html" class="dropdown-item">Top contributions</a>
+                                                </li>
+                                                <li><a href="index4.html" class="dropdown-item">Assistance</a></li>
+                                                <li><a href="index5.html" class="dropdown-item">API</a></li>
+                                            </ul>
+                                        </li>
+                                        <div class="d-flex justify-content around">
+                                            <li class="nav-item-dropdown">
+                                                <a href="#" class="nav-link" id="text">Connexion</a>
+                                            </li>
+                                            <li class="nav-item-dropdown">
+                                                <a href="#" class="nav-link d-flex " id="text">Rejoindre TMDB</a>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <div class="container">
+                            <div class="c-box">
+                                <div class="welcome-searching">
+                                    <div class="wstxt">
+                                        <h2>Bienvenue,</h2>
+                                        <h3>
+                                            Des millions de films, émissions télévisées et artistes...
+                                        </h3>
+                                    </div>
+                                    <form action="#">
+                                        <input type="text" name="searching-movies" id="searching-movies"
+                                            placeholder="Rechercher un film, une émission télévisée, un artiste..." />
+                                        <input type="submit" value="Search" id="submitBtn" />
+                                    </form>
+                                </div>
+                                <div class="popularmovis">
+                                    <div class="section-title">
+                                        <p>Populaires</p>
+                                    </div>
+                                    <div class="glass">
+                                        <!--  -->
+                                        <div class="card">
+                                            <div class="imgs">
+                                                <img src="./src/img/cybZ7FoeBoBJPieKvSp4wh2yCMR.jpg" />
+                                                <div class="populare"></div>
+                                            </div>
+                                            <div class="information">
+                                                <p class="name">Hawkeye</p>
+                                                <p class="date">24 nov. 2021</p>
+                                            </div>
+                                        </div>
+
+                                        <!--  -->
+                                        <div class="card">
+                                            <div class="imgs">
+                                                <img src="./src/img/6zBWSuYW3Ps1nTfeMS8siS4KUaA.jpg" />
+                                                <div class="populare"></div>
+                                            </div>
+                                            <div class="information">
+                                                <p class="name">Riverdale</p>
+                                                <p class="date">26 nov. 2017</p>
+                                            </div>
+                                        </div>
+
+                                        <!--  -->
+                                        <div class="card">
+                                            <div class="imgs">
+                                                <img src="./src/img/qKf27HFd8BuDIOX2BfymAOpEKuk.jpg" />
+                                                <div class="populare"></div>
+                                            </div>
+                                            <div class="information">
+                                                <p class="name">La Roue du temps</p>
+                                                <p class="date">18 nov. 2021</p>
+                                            </div>
+                                        </div>
+
+                                        <!--  -->
+                                        <div class="card">
+                                            <div class="imgs">
+                                                <img src="./src/img/jKuDyqx7jrjiR9cDzB5pxzhJAdv.jpg" />
+                                                <div class="populare"></div>
+                                            </div>
+                                            <div class="information">
+                                                <p class="name">Finch</p>
+                                                <p class="date">4 nov. 2021</p>
+                                            </div>
+                                        </div>
+
+                                        <!--  -->
+                                        <div class="card">
+                                            <div class="imgs">
+                                                <img src="./src/img/4U9D1Z3MyM1WHyr0xPuAMWJlVzc.jpg" />
+                                                <div class="populare"></div>
+                                            </div>
+                                            <div class="information">
+                                                <p class="name">Foundation</p>
+                                                <p class="date">23 sept. 2021</p>
+                                            </div>
+                                        </div>
+
+                                        <!--  -->
+                                        <div class="card">
+                                            <div class="imgs">
+                                                <img src="./src/img/jrfgfSc5d7wNlez1TSz8U0fggnZ.jpg" />
+                                                <div class="populare"></div>
+                                            </div>
+                                            <div class="information">
+                                                <p class="name">Ciao Alberto</p>
+                                                <p class="date">12 nov. 2021</p>
+                                            </div>
+                                        </div>
+
+                                        <!--  -->
+                                        <div class="card">
+                                            <div class="imgs">
+                                                <img src="./src/img/gtiNyP9BoQmPzjeDhvofUtUxpJV.jpg" />
+                                                <div class="populare"></div>
+                                            </div>
+                                            <div class="information">
+                                                <p class="name">The Seven Deadly Sins: Cursed by Light</p>
+                                                <p class="date">2 juill. 2021</p>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                    </div>
+                                </div>
+                                <div class="freemovis">
+                                    <div class="section-title">
+                                        <p>Gratuits</p>
+                                    </div>
+                                    <div class="glass">
+                                        <!--  -->
+                                        <div class="card">
+                                            <div class="imgs">
+                                                <img src="./src/img/ePTd4DfHPvPcUJPTjusYUvO3vtj.jpg" />
+                                                <div class="populare"></div>
+                                            </div>
+                                            <div class="information">
+                                                <p class="name">Leprechaun 3 : À Las Vegas</p>
+                                                <p class="date">4 juill. 1995</p>
+                                            </div>
+                                        </div>
+
+                                        <!--  -->
+                                        <div class="card">
+                                            <div class="imgs">
+                                                <img src="./src/img/lkoBDVm9SHviBJEDkPBd01weE4f.jpg" />
+                                                <div class="populare"></div>
+                                            </div>
+                                            <div class="information">
+                                                <p class="name">Leprechaun 4 : Destination cosmos</p>
+                                                <p class="date">25 déc. 1996</p>
+                                            </div>
+                                        </div>
+
+                                        <!--  -->
+                                        <div class="card">
+                                            <div class="imgs">
+                                                <img src="./src/img/geike7VgTrftxwzcvND4dRdZdAv.jpg" />
+                                                <div class="populare"></div>
+                                            </div>
+                                            <div class="information">
+                                                <p class="name">Harry Potter, une histoire de la magie</p>
+                                                <p class="date">28 oct. 2017</p>
+                                            </div>
+                                        </div>
+
+                                        <!--  -->
+                                        <div class="card">
+                                            <div class="imgs">
+                                                <img src="./src/img/niniH26VfSTF7fefLWwipvNFGbL.jpg" />
+                                                <div class="populare"></div>
+                                            </div>
+                                            <div class="information">
+                                                <p class="name">La vie est belle</p>
+                                                <p class="date">20 déc. 1946</p>
+                                            </div>
+                                        </div>
+
+                                        <!--  -->
+                                        <div class="card">
+                                            <div class="imgs">
+                                                <img src="./src/img/7sXthW46RwmPBdacGHnhOzLv40d.jpg" />
+                                                <div class="populare"></div>
+                                            </div>
+                                            <div class="information">
+                                                <p class="name">Twist</p>
+                                                <p class="date">22 janv. 2021</p>
+                                            </div>
+                                        </div>
+
+                                        <!--  -->
+                                        <div class="card">
+                                            <div class="imgs">
+                                                <img src="./src/img/AmksfG6y5hVl4V3bmwdzlsylmm5.jpg" />
+                                                <div class="populare"></div>
+                                            </div>
+                                            <div class="information">
+                                                <p class="name">Spartatouille</p>
+                                                <p class="date">24 janv. 2008</p>
+                                            </div>
+                                        </div>
+
+                                        <!--  -->
+                                        <div class="card">
+                                            <div class="imgs">
+                                                <img src="./src/img/yZdVDxLXbz4yucwMy1yTCGTYNVC.jpg" />
+                                                <div class="populare"></div>
+                                            </div>
+                                            <div class="information">
+                                                <p class="name">Barbie et Chelsea : L'anniversaire perdu</p>
+                                                <p class="date">14 mai 2021</p>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div class="footer-container">
+                                <div class="footer-part1">
+                                    <a href="" class="footer-logo"><img
+                                            src="./src/img/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" /></a>
+                                    <a href="#" class="rejoincommunity">Rejoindre la communauté</a>
+                                </div>
+                                <div class="footer-part2">
+                                    <ul>
+                                        <p class="list-title">LES BASES</p>
+                                        <li><a href="#">À propos de TMDB</a></li>
+                                        <li><a href="#">Contactez-nous</a></li>
+                                        <li><a href="#">Forums d'assistance</a></li>
+                                        <li><a href="#">API</a></li>
+                                        <li><a href="#">Statut du système</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-part3">
+                                    <ul>
+                                        <p class="list-title">S'IMPLIQUER</p>
+                                        <li><a href="#">Bible des contributions</a></li>
+                                        <li><a href="#">Applications tierces</a></li>
+                                        <li><a href="#">Ajouter un film</a></li>
+                                        <li><a href="#">Ajouter une émission TV</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-part4">
+                                    <ul>
+                                        <p class="list-title">COMMUNAUTÉ</p>
+                                        <li><a href="#">Règles</a></li>
+                                        <li><a href="#">Conversations</a></li>
+                                        <li><a href="#">Top contributions</a></li>
+                                        <li><a href="#">Twitter</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-part5">
+                                    <ul>
+                                        <p class="list-title">MENTIONS LÉGALES</p>
+                                        <li><a href="#">Conditions d'utilisation API</a></li>
+                                        <li><a href="#">Conditions d'utilisation</a></li>
+                                        <li><a href="#">Politique de confidentialité</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+    </section>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

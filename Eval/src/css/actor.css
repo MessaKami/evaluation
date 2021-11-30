@@ -1,0 +1,365 @@
+
+#app .navbar {
+    width: 100%;
+    height: 65px;
+    background: #032541;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  #app .navbar .navbar-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+  }
+  
+  #app .navbar .navbar-left .logo-container img {
+    width: 150px;
+  }
+  
+  #app .navbar .navbar-left .left-list ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+  }
+  
+  #app .navbar .navbar-left .left-list ul li {
+    position: relative;
+    padding: 0 15px 0 15px;
+    height: 50%;
+  }
+  
+  #app .navbar .navbar-left .left-list ul li:hover .dropdown {
+    overflow: visible;
+    visibility: visible;
+  }
+  
+  #app .navbar .navbar-left .left-list ul li .dropdown {
+    visibility: hidden;
+    padding: 10px;
+    top: 25px;
+    position: absolute;
+    width: 200px;
+    min-height: 50px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    border-radius: 10px;
+  }
+  
+  #app .navbar .navbar-left .left-list ul li .dropdown ul {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+  }
+  
+  #app .navbar .navbar-left .left-list ul li .dropdown ul li {
+    padding: 5px 0 5px 0;
+    width: 100%;
+  }
+  
+  #app .navbar .navbar-left .left-list ul li .dropdown ul li:hover {
+    background: rgba(100, 100, 100, 0.1);
+  }
+  
+  #app .navbar .navbar-left .left-list ul li .dropdown ul li a {
+    margin-left: 15px;
+    color: black;
+    font-weight: 400;
+    font-weight: 0;
+  }
+  
+  #app .navbar .navbar-left .left-list ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    padding: 0 0 10px 0;
+  }
+  
+  #app .navbar .navbar-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+  }
+  
+  #app .navbar .navbar-right ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+  }
+  
+  #app .navbar .navbar-right ul li {
+    padding: 0 15px 0 15px;
+  }
+  
+  #app .navbar .navbar-right ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+  }
+  
+  #app .navbar .navbar-right ul li .search-logo {
+    font-size: 27px;
+    color: cyan;
+  }
+  
+  #app .navbar .navbar-right ul li .add-movie {
+    background: transparent;
+    font-weight: 800;
+    font-size: 30px;
+    border: none;
+    color: #fff;
+  }
+  
+  #app .navbar .navbar-right ul li .change-language {
+    text-transform: uppercase;
+    font-weight: 400;
+    border-radius: 3px;
+    font-size: 13px;
+    background: transparent;
+    padding: 7px;
+    border: 1px #fff solid;
+    color: #fff;
+  }
+
+  #app .main-acteur {
+    margin-top: 2px;
+    
+}
+
+
+ #app .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 50px;
+   margin-top: 30px;
+}
+
+#app .card {
+    display: grid;
+    grid-template-rows: max-content 50px 1fr;
+}
+
+#app .card img {
+    object-fit: cover;
+   width: 100%;
+    height: 100%;
+    
+}
+
+#app .footer {
+    background: #032541;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    padding: 40px 0 40px 0;
+  }
+  
+  #app .footer .footer-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+  }
+  
+  #app .footer .footer-container .footer-part1,
+  #app .footer .footer-container .footer-part2,
+  #app .footer .footer-container .footer-part3,
+  #app .footer .footer-container .footer-part4,
+  #app .footer .footer-container .footer-part5 {
+    margin: 0 20px 0 20px;
+  }
+  
+  #app .footer .footer-container .footer-part1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    position: relative;
+  }
+  
+  #app .footer .footer-container .footer-part1 .footer-logo img {
+    margin-left: 40%;
+    width: 130px;
+    height: 94px;
+  }
+  
+  #app .footer .footer-container .footer-part1 .rejoincommunity {
+    margin-top: 50px;
+    background: white;
+    color: #01b4e4;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  #app .footer .footer-container .footer-part2,
+  #app .footer .footer-container .footer-part3,
+  #app .footer .footer-container .footer-part4,
+  #app .footer .footer-container .footer-part5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: end;
+    align-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+  }
+  
+  #app .footer .footer-container .footer-part2 ul,
+  #app .footer .footer-container .footer-part3 ul,
+  #app .footer .footer-container .footer-part4 ul,
+  #app .footer .footer-container .footer-part5 ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: end;
+    align-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+  }
+  
+  #app .footer .footer-container .footer-part2 ul .list-title,
+  #app .footer .footer-container .footer-part3 ul .list-title,
+  #app .footer .footer-container .footer-part4 ul .list-title,
+  #app .footer .footer-container .footer-part5 ul .list-title {
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #app .footer .footer-container .footer-part2 ul li,
+  #app .footer .footer-container .footer-part3 ul li,
+  #app .footer .footer-container .footer-part4 ul li,
+  #app .footer .footer-container .footer-part5 ul li {
+    padding: 5px 0 1px 0;
+  }
+  
+  #app .footer .footer-container .footer-part2 ul li a,
+  #app .footer .footer-container .footer-part3 ul li a,
+  #app .footer .footer-container .footer-part4 ul li a,
+  #app .footer .footer-container .footer-part5 ul li a {
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  
+
+  
